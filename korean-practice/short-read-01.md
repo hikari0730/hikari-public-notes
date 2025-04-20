@@ -1,4 +1,4 @@
-⁸# 📝 Short Reading Practice 01
+# 📝 Short Reading Practice 01
 
 ## ✨ Topic: 금요일에 뭐 해요?
 

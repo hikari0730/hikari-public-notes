@@ -112,6 +112,60 @@ D. It does not update the view
 ✅ Answer: C
 
 
+## 5. Lesson Quiz (with Answers)
+
+### Q1: What is the purpose of `ref()` in Vue 3?
+
+- A. To define components  
+- B. To make primitive values reactive  
+- C. To loop through arrays  
+- D. To bind HTML attributes
+
+**Answer: B**
+
+---
+
+### Q2: What does `.value` do when using `ref()`?
+
+- A. It returns a string version of the variable  
+- B. It accesses the inner value of a ref-wrapped variable  
+- C. It defines a new computed property  
+- D. It triggers a re-render manually
+
+**Answer: B**
+
+---
+
+### Q3: What kind of data is best used with `reactive()`?
+
+- A. Boolean  
+- B. String  
+- C. Object or Array  
+- D. Number
+
+**Answer: C**
+
+---
+
+### Q4: Which of the following statements is TRUE?
+
+- A. `ref()` and `reactive()` can be used interchangeably at all times  
+- B. `reactive()` returns a Proxy and works well with objects  
+- C. `ref()` is used to watch changes in templates only  
+- D. `reactive()` is for read-only data
+
+**Answer: B**
+
+---
+
+### Q5: In the Vue template, how do you display a `ref()` value?
+
+```html
+<!-- Choose the correct usage -->
+<p>{{ counter }}</p>  
+<p>{{ counter.value }}</p>  
+<p>{{ ref(counter) }}</p>
+
 
 
 

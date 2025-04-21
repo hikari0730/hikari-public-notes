@@ -71,7 +71,26 @@ createApp({
 }).mount('#app');
 ```
 
-- Ex.1
+- Ex.2
+```html
+<script setup>
+import { reactive } from 'vue'
+
+const person = reactive({
+  name: 'Hikari',
+  age: 18
+})
+
+function growUp() {
+  person.age++
+}
+</script>
+
+<template>
+  <p>{{ person.name }} is {{ person.age }} years old.</p>
+  <button @click="growUp">Grow Up</button>
+</template>
+```
 
 ---
 

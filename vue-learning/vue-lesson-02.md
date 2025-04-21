@@ -45,14 +45,16 @@ app.mount("#app");
 
 When message changes, the text inside `<h2>` also updates instantly.
 
-
 ---
 
-Quick Quiz
+### Quick Quiz
 
 Q1. What does {{ message }} do in Vue?
+
 Q2. How do you initialize a Vue instance and mount it to the DOM?
+
 Q3. True or False: When a Vue data property changes, the DOM stays the same.
+
 Q4. Fill in the blank:
 
 ```js

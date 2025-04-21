@@ -88,15 +88,15 @@ createApp({
 
 1. **What is the main purpose of ref() in Vue 3?**
 
-* A. To store functions
+  * A. To store functions
 
-* B. To create reactive primitive values
+  * B. To create reactive primitive values
 
-* C. To define components
+  * C. To define components
 
-* D. To access DOM nodes
+  * D. To access DOM nodes
 
-  ✅ Answer: B
+    ✅ Answer: B
 
 
 

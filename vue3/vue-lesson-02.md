@@ -20,23 +20,24 @@ Vue’s reactivity system allows the view (DOM) to automatically update when the
 
 ref()
 
-Used to create reactive primitive values (numbers, strings, booleans, etc.).
+- Used to create reactive primitive values (numbers, strings, booleans, etc.).
 
-Access or modify the value via .value.
+- Access or modify the value via .value.
 
-
+```js
 import { ref } from 'vue';
 
 const count = ref(0);
 count.value++;
 
 reactive()
+```
 
-Used to create reactive objects or arrays.
+- Used to create reactive objects or arrays.
 
-You can access properties directly, no need for .value.
+- You can access properties directly, no need for .value.
 
-
+```js
 import { reactive } from 'vue';
 
 const user = reactive({
@@ -45,17 +46,20 @@ const user = reactive({
 });
 
 user.age++;
-
+```
 
 ---
 
-3. Using Reactive Data in Templates
+## 3. Using Reactive Data in Templates
 
+```html
 <div id="app">
   <p>Counter: {{ count }}</p>
   <button @click="increment">+1</button>
 </div>
+```
 
+```js
 import { createApp, ref } from 'vue';
 
 createApp({
@@ -66,23 +70,21 @@ createApp({
     return { count, increment };
   }
 }).mount('#app');
-
-
----
-
-4. Important Notes
-
-ref() values need .value in JavaScript, but not in templates.
-
-reactive() is good for objects, but cannot be destructured directly (it breaks reactivity).
-
-You can use toRefs() or computed() to preserve reactivity when destructuring.
-
-
+```
 
 ---
 
-Lesson Quiz
+## 4. Important Notes
+
+- ref() values need .value in JavaScript, but *not in templates*.
+
+- reactive() is good for objects, but cannot be destructured directly (it breaks reactivity).
+
+- You can use toRefs() or computed() to preserve reactivity when destructuring.
+
+---
+
+## Lesson Quiz
 
 1. What is the main purpose of ref() in Vue 3?
 

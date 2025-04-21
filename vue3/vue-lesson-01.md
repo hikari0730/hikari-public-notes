@@ -77,11 +77,11 @@ Data defined in the data() function will automatically update the DOM when chang
 ### Q1: What is Vue mainly used for?
 
 A. Server-side logic
-B. Building user interfaces
-C. Backend API development
-D. Database management
+A. Building user interfaces
+A. Backend API development
+A. Database management
 
-*Answer:* B. Building user interfaces
+**Answer:** B. Building user interfaces
 
 
 ---

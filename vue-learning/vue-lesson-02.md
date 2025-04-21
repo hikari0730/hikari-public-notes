@@ -1,4 +1,4 @@
-# Vue.js Lesson 2: Vue Instance & Data Binding
+⁶# Vue.js Lesson 2: Vue Instance & Data Binding
 
 ## Objective
 Understand how the Vue instance works and how to bind data using the `{{ }}` syntax.
@@ -72,9 +72,8 @@ const app = Vue.createApp({
 Answers / Hints
 
 A1. It binds the message data property to the DOM.
-A2.
 
-const app = Vue.createApp({...});
+A2.const app = Vue.createApp({...});
 app.mount('#id');
 
 A3. False – Vue updates the DOM reactively.

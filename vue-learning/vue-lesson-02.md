@@ -43,7 +43,7 @@ const app = Vue.createApp({
 app.mount("#app");
 ```
 
-When message changes, the text inside <h2> also updates instantly.
+When message changes, the text inside `<h2>` also updates instantly.
 
 
 ---

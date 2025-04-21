@@ -20,8 +20,8 @@ description: "A Markdown-based progress tracker for Vue 3 lessons including note
 
 ## Table of Contents
 
-1. [X] Lesson 1: Introduction and Installation  
-2. [ ] Lesson 2: Reactive Data in Vue 3  
+1. [x] Lesson 1: Introduction and Installation  
+2. [x] Lesson 2: Reactive Data in Vue 3  
 3. [ ] Lesson 3: Event Binding  
 4. [ ] Lesson 4: Conditional and List Rendering  
 5. [ ] Lesson 5: Parent-Child Components & Props  
@@ -38,7 +38,7 @@ description: "A Markdown-based progress tracker for Vue 3 lessons including note
 | Lesson | Title                                      | Status   | Notes                            |
 |--------|--------------------------------------------|----------|----------------------------------|
 | 1      | Introduction and Installation              | [x]      | Completed on 2025-04-21          |
-| 2      | Reactive Data in Vue 3                     | [ ]      |                                  |
+| 2      | Reactive Data in Vue 3                     | [x]      | Completed on 2025-04-22                                 |
 | 3      | Event Binding                              | [ ]      |                                  |
 | 4      | Conditional and List Rendering             | [ ]      |                                  |
 | 5      | Parent-Child Components & Props            | [ ]      |                                  |

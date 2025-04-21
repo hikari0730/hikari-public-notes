@@ -76,7 +76,7 @@ createApp({
 
 ## 4. Important Notes
 
-- ref() values need .value in JavaScript, but *not in templates*.
+- ref() values need .value in JavaScript, but **not in templates**.
 
 - reactive() is good for objects, but cannot be destructured directly (it breaks reactivity).
 

@@ -49,13 +49,13 @@ When message changes, the text inside `<h2>` also updates instantly.
 
 ### Quick Quiz
 
-Q1. What does {{ message }} do in Vue?
+**Q1.** What does {{ message }} do in Vue?
 
-Q2. How do you initialize a Vue instance and mount it to the DOM?
+**Q2.** How do you initialize a Vue instance and mount it to the DOM?
 
-Q3. True or False: When a Vue data property changes, the DOM stays the same.
+**Q3.** True or False: When a Vue data property changes, the DOM stays the same.
 
-Q4. Fill in the blank:
+**Q4.** Fill in the blank:
 
 ```js
 const app = Vue.createApp({
@@ -71,16 +71,16 @@ const app = Vue.createApp({
 
 Answers / Hints
 
-A1. It binds the message data property to the DOM.
+**A1.** It binds the message data property to the DOM.
 
-A2.
+**A2.**
 ```js
 const app = Vue.createApp({...});
 app.mount('#id');
 ```
 
-A3. False – Vue updates the DOM reactively.
-A4. data
+**A3.** False – Vue updates the DOM reactively.
+**A4.** data
 
 
 ---

@@ -1,5 +1,4 @@
 ---
-
 Meta
 
 created: 2025-04-21
@@ -8,8 +7,6 @@ author: HIKARI
 project: Vue 3 Learning Tracker
 style: Engineer-style MD + emoji
 tools: GitHub + Markdown + Vue 3
-
-
 ---
 
 

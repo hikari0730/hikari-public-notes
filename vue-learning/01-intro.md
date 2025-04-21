@@ -33,9 +33,7 @@ app.mount('#app')
 </script>
 ```
 
-
-
-## Quiz 01 – Introduction to Vue.js
+## Quiz – Introduction to Vue.js
 
 This is a short quiz to review the basics of Vue.js.
 

@@ -28,7 +28,7 @@ Intro → Reactivity → Events → Conditionals/Loops → Components → Comput
          ↓                      ↓                     ↓              ↓  
       Forms               Watchers             Props/Emits     Object Rendering
 
-
+```
 ---
 
 ## Progress Table

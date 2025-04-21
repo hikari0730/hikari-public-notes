@@ -41,7 +41,9 @@ npm run serve
 <div id="app">
   {{ message }}
 </div>
+```
 
+```js
 <script>
   const { createApp } = Vue;
 

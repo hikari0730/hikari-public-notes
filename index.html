@@ -1,109 +1,54 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>히카리의노트 - Hikari's Notes</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <title>히카리의노트</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: linear-gradient(to top, #fef6e4, #dff9fb);
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #cceeff, #ffffff);
     }
-    /*
-    header {
-      background: linear-gradient(to right, #56ccf2, #2f80ed);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    } */
 
     header {
       background: url('header-bg.png') no-repeat center center;
       background-size: cover;
-      color: white;
       text-align: center;
       padding: 4rem 1rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.65); /* 半透明白色 */
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 1rem;
     }
 
     header h1 {
+      font-size: 2.8rem;
       margin: 0;
-      font-size: 2.5rem;
+      color: #004466; /* 深藍 */
     }
-    .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    .note-links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .note-card {
-      background: #ffffffcc;
-      border: 1px solid #cde;
-      border-radius: 16px;
-      padding: 1rem;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease;
-    }
-    .note-card:hover {
-      transform: scale(1.02);
-    }
-    .note-card h2 {
-      margin-top: 0;
-      color: #0077b6;
-    }
-    footer {
-      text-align: center;
+
+    main {
       padding: 2rem;
-      color: #888;
-    }
-    #md-content {
-      background: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 10px;
-      border: 1px solid #ddd;
+      max-width: 900px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>히카리의노트</h1>
-    <p>Welcome to Hikari's colorful learning world!</p>
-  </header>  <div class="container">
-    <section class="note-links">
-      <div class="note-card">
-        <h2>Vue Learning Notes</h2>
-        <a href="vue-learning/01-intro.md">01-intro.md</a>
-      </div>
-      <div class="note-card">
-        <h2>Korean Practice</h2>
-        <a href="korean-practice/short-read-01.md">short-read-01.md</a><br>
-        <a href="korean-practice/short-read-02.md">short-read-02.md</a>
-      </div>
-      <div class="note-card">
-        <h2>Quizzes</h2>
-        <a href="quizzes/quiz-01.md">quiz-01.md</a>
-      </div>
-    </section><h2>README.md Preview</h2>
-<div id="md-content">Loading...</div>
+    <div class="overlay">
+      <h1>히카리의노트</h1>
+    </div>
+  </header>
 
-  </div>  <footer>
-    Created by Hikari | Powered by GitHub Pages
-  </footer>  <script>
-    fetch('README.md')
-      .then(res => res.text())
-      .then(md => {
-        document.getElementById('md-content').innerHTML = marked.parse(md);
-      })
-      .catch(err => {
-        document.getElementById('md-content').innerText = 'Failed to load README.md';
-        console.error(err);
-      });
-  </script></body>
+  <main>
+    <p>Welcome to Hikari's colorful notebook by the sea!</p>
+  </main>
+</body>
 </html>

@@ -50,6 +50,7 @@ user.age++;
 
 ## 3. Using Reactive Data in Templates
 
+- Ex.1
 ```html
 <div id="app">
   <p>Counter: {{ count }}</p>
@@ -69,6 +70,8 @@ createApp({
   }
 }).mount('#app');
 ```
+
+- Ex.1
 
 ---
 

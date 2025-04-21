@@ -27,7 +27,7 @@ Vue uses **reactive binding**, meaning that when your data changes, the DOM upda
 <div id="app">
   <h2>{{ message }}</h2>
 </div>
-'''
+```
 
 ### Javascript (Vue 3)
 

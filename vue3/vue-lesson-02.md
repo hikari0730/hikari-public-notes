@@ -95,7 +95,8 @@ createApp({
    - C. To define components
 
    - D. To access DOM nodes
-✅ Answer: B
+
+   ✅ Answer: B
 
 
 

@@ -166,7 +166,7 @@ D. It does not update the view
 <p>{{ counter.value }}</p>  
 <p>{{ ref(counter) }}</p>
 ```
-Answer: <p>{{ counter }}</p>
+Answer: {{ counter }}
 
 
 > Note: Even though .value is required in JS, Vue template syntax unwraps it automatically.

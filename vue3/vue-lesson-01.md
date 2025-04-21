@@ -97,14 +97,14 @@ D. To define computed properties
 
 ---
 
-Q3: What does {{ message }} do in a Vue template?
+### Q3: What does {{ message }} do in a Vue template?
 
-A. Runs a JavaScript alert
-B. Inserts static HTML
-C. Binds data to the DOM
-D. Defines a CSS class
+A. Runs a JavaScript alert  
+B. Inserts static HTML  
+C. Binds data to the DOM  
+D. Defines a CSS class  
 
-Answer: C. Binds data to the DOM
+**Answer:** C. Binds data to the DOM
 
 
 ---

@@ -82,6 +82,7 @@ Inside your template:
   <button @click="count++">Increase</button>
 </template>
 ```
+
 ```js
 <script setup>
 import { ref } from 'vue';

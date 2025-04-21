@@ -86,7 +86,7 @@ createApp({
 
 ## Lesson Quiz
 
-1+. **What is the main purpose of ref() in Vue 3?**
+1. **What is the main purpose of ref() in Vue 3?**
 
    * A. To store functions
 
@@ -100,7 +100,7 @@ createApp({
 
 
 
-2+. **Which of the following statements is TRUE about reactive()?**
+2. **Which of the following statements is TRUE about reactive()?**
 
 A. It only works with primitive values
 

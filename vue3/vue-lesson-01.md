@@ -83,17 +83,16 @@ D. Database management
 
 **Answer:** B. Building user interfaces
 
-
 ---
 
-Q2: What is the purpose of createApp() in Vue 3?
+### Q2: What is the purpose of createApp() in Vue 3?
 
-A. To install Vue plugins
-B. To mount the Vue devtools
-C. To initialize and mount a Vue application
-D. To define computed properties
+A. To install Vue plugins  
+B. To mount the Vue devtools  
+C. To initialize and mount a Vue application  
+D. To define computed properties  
 
-Answer: C. To initialize and mount a Vue application
+**Answer:** C. To initialize and mount a Vue application
 
 
 ---

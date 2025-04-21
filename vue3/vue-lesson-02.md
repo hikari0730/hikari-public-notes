@@ -6,13 +6,11 @@ tags: [vue3, ref, reactive, data binding]
 status: done
 ---
 
-
 # Lesson 2: Reactive Data in Vue 3
 
 ## 1. What is Reactivity?
 
 Vue’s reactivity system allows the view (DOM) to automatically update when the data changes. This is the core of Vue.
-
 
 ---
 
@@ -32,7 +30,6 @@ count.value++;
 ```
 
 `reactive()`
-
 
 - Used to create reactive objects or arrays.
 

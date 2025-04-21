@@ -18,7 +18,7 @@ Vue’s reactivity system allows the view (DOM) to automatically update when the
 
 ## 2. ref() and reactive() in Vue 3
 
-ref()
+`ref()`
 
 - Used to create reactive primitive values (numbers, strings, booleans, etc.).
 
@@ -29,9 +29,10 @@ import { ref } from 'vue';
 
 const count = ref(0);
 count.value++;
-
-reactive()
 ```
+
+`reactive()`
+
 
 - Used to create reactive objects or arrays.
 

@@ -1,89 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>히카리의노트</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #e6f7ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #a8edea, #fed6e3);
       color: #00334d;
-    }
-    header {
-      background: #0099cc;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      background-image: url("A_flat-style_digital_illustration_depicts_a_seasca.png");
-      background-size: cover;
-      background-position: center;
-    }
-    header h1 {
-      background-color: rgba(0, 0, 0, 0.4);
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    h2 {
-      margin-top: 0;
-      color: #0077aa;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    a {
-      color: #0099cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #777;
-      font-size: 0.9rem;
-    }
+    }header {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffffcc;
+  border-left: 8px solid #00c6ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #0072ff;
+}
+
+.card a {
+  text-decoration: none;
+  color: #004466;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  font-size: 0.9rem;
+}
+
   </style>
 </head>
 <body>
   <header>
     <h1>히카리의노트</h1>
+    <p>Welcome to Hikari's ocean breeze-inspired knowledge garden</p>
   </header>
   <main>
-    <section>
-      <h2>筆記目錄 Notes</h2>
-      <ul>
-        <li><a href="vue-learning/01-intro.md">Vue.js 學習筆記</a></li>
-        <li><a href="korean-practice/short-read-01.md">韓語短文練習 01</a></li>
-        <li><a href="korean-practice/short-read-02.md">韓語短文練習 02</a></li>
-        <li><a href="quizzes/quiz-01.md">Vue.js 小測驗 01</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>關於本站</h2>
-      <p>
-        本站整理 HIKARI 的學習筆記，包含工程數學、Vue、韓語等。<br>
-        使用 GitHub Pages 架設，支援 Markdown 格式、版本控管、可擴展內容。
-      </p>
-    </section>
+    <div class="card">
+      <h2>Vue Learning Notes</h2>
+      <a href="vue-learning/01-intro.md">Start with 01-intro.md</a>
+    </div><div class="card">
+  <h2>Korean Short Reading</h2>
+  <ul>
+    <li><a href="korean-practice/short-read-01.md">short-read-01.md</a></li>
+    <li><a href="korean-practice/short-read-02.md">short-read-02.md</a></li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Quizzes</h2>
+  <a href="quizzes/quiz-01.md">quiz-01.md</a>
+</div>
+
+<div class="card">
+  <h2>README</h2>
+  <a href="README.md">View README.md</a>
+</div>
+
   </main>
   <footer>
-    &copy; 2025 HIKARI. Built with passion and sea breeze.
+    &copy; 2025 Hikari. Theme inspired by ocean, sand & freedom.
   </footer>
 </body>
 </html>

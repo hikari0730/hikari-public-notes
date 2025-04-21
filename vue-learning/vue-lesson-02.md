@@ -1,4 +1,4 @@
-⁶# Vue.js Lesson 2: Vue Instance & Data Binding
+# Vue.js Lesson 2: Vue Instance & Data Binding
 
 ## Objective
 Understand how the Vue instance works and how to bind data using the `{{ }}` syntax.
@@ -47,7 +47,7 @@ When message changes, the text inside `<h2>` also updates instantly.
 
 ---
 
-### Quick Quiz
+## Quick Quiz
 
 **Q1.** What does {{ message }} do in Vue?
 
@@ -69,7 +69,7 @@ const app = Vue.createApp({
 
 ---
 
-Answers / Hints
+## Answers / Hints
 
 **A1.** It binds the message data property to the DOM.
 

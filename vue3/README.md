@@ -47,7 +47,7 @@ description: "A Markdown-based progress tracker for Vue 3 lessons including note
 | 8      | Watchers and Error Handling                | [ ]      |                                  |
 | 9      | Props, Emits, and Component Communication  | [ ]      |                                  |
 | 10     | Object Rendering with v-for                | [ ]      |                                  |
-
+|||||
 ---
 
 ## Next Step

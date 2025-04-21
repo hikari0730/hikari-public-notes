@@ -31,7 +31,7 @@ Vue uses **reactive binding**, meaning that when your data changes, the DOM upda
 
 ### Javascript (Vue 3)
 
-'''js
+```js
 const app = Vue.createApp({
   data() {
     return {
@@ -41,7 +41,7 @@ const app = Vue.createApp({
 });
 
 app.mount("#app");
-'''
+```
 
 When message changes, the text inside <h2> also updates instantly.
 
@@ -55,7 +55,7 @@ Q2. How do you initialize a Vue instance and mount it to the DOM?
 Q3. True or False: When a Vue data property changes, the DOM stays the same.
 Q4. Fill in the blank:
 
-'''js
+```js
 const app = Vue.createApp({
   _____() {
     return {
@@ -63,7 +63,7 @@ const app = Vue.createApp({
     };
   }
 });
-'''
+```
 
 ---
 

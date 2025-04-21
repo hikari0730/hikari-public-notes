@@ -72,7 +72,26 @@ createApp({
 
 ---
 
-## 4. Important Notes
+#$4. Template Binding
+
+Inside your template:
+
+```html
+<template>
+  <p>{{ count }}</p>
+  <button @click="count++">Increase</button>
+</template>
+```
+```js
+<script setup>
+import { ref } from 'vue';
+const count = ref(0);
+</script>
+```
+
+> When using <script setup>, you don't need to write return or setup() manually.
+
+## 5. Important Notes
 
 - ref() values need .value in JavaScript, but **not in templates**.
 
@@ -82,7 +101,7 @@ createApp({
 
 ---
 
-## 5. Lesson Quiz (with Answers)
+## 6. Lesson Quiz (with Answers)
 
 ### Q1: What is the purpose of `ref()` in Vue 3?
 

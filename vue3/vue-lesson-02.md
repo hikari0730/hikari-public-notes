@@ -72,7 +72,7 @@ createApp({
 
 ---
 
-#$4. Template Binding
+## 4. Template Binding
 
 Inside your template:
 

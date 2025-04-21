@@ -20,7 +20,7 @@ description: "A Markdown-based progress tracker for Vue 3 lessons including note
 
 ## Table of Contents
 
-1. [ ] Lesson 1: Introduction and Installation  
+1. [X] Lesson 1: Introduction and Installation  
 2. [ ] Lesson 2: Reactive Data in Vue 3  
 3. [ ] Lesson 3: Event Binding  
 4. [ ] Lesson 4: Conditional and List Rendering  

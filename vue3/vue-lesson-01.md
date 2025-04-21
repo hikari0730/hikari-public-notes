@@ -37,12 +37,15 @@ npm run serve
 
 ### Start a Simple Vue App
 
+**HTML Template**
+
 ```html
 <div id="app">
   {{ message }}
 </div>
 ```
 
+**JavaScript**
 ```js
 <script>
   const { createApp } = Vue;

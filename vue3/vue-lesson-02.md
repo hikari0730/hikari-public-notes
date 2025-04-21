@@ -1,14 +1,9 @@
 ---
-
-Meta
-
 title: Lesson 2 - Reactive Data in Vue 3
 language: en
 level: beginner
 tags: [vue3, ref, reactive, data binding]
 status: done
-
-
 ---
 
 

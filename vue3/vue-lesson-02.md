@@ -96,7 +96,7 @@ createApp({
 
    - D. To access DOM nodes
 
-   ✅ Answer: B
+     ✅ Answer: B
 
 
 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>數學與化學公式轉換器</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax 主設定 -->
+  <script>
+    window.MathJax = {
+      loader: {
+        load: ['[tex]/mhchem']
+      },
+      tex: {
+        inlineMath: [['$', '$'], ['\', '\']],
+        packages: {'[+]': ['mhchem']}
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0f24;
+      color: #e0e0e0;
+      margin: 2rem;
+    }
+
+    h1 {
+      color: #00b4d8;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    textarea, .preview-box {
+      width: 100%;
+      background-color: #1b1f3a;
+      color: #ffffff;
+      border: 1px solid #00b4d8;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+      margin-bottom: 1rem;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      background-color: #0077b6;
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00b4d8;
+    }
+
+    .preview-box {
+      margin-top: 2rem;
+      min-height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>數學 & 化學 公式轉換器</h1>
+  <div class="container">
+
+    <textarea id="input" placeholder="請輸入 LaTeX 或化學式，如：$E=mc^2$，$\ce{H2O + CO2 -> H2CO3}$"></textarea>
+
+    <div class="button-group">
+      <button onclick="renderMath()">轉換</button>
+      <button onclick="clearAll()">清空</button>
+    </div>
+
+    <div id="preview" class="preview-box"></div>
+
+  </div>
+
+  <script>
+    function renderMath() {
+      const input = document.getElementById('input').value;
+      const preview = document.getElementById('preview');
+      preview.innerHTML = input;
+      MathJax.typesetPromise([preview]);
+    }
+
+    function clearAll() {
+      document.getElementById('input').value = '';
+      document.getElementById('preview').innerHTML = '';
+    }
+  </script>
+</body>
+</html>

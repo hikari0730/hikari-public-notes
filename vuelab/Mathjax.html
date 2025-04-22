@@ -1,25 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>MathJax TeX Test Page</title>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<!--
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-  
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
-</script>
--->
-
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_CHTML">
-</script>
+  <meta charset="UTF-8">
+  <title>MathJax Example on GitHub Pages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- MathJax CDN -->
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  <h1>MathJax on GitHub Pages</h1>
+  <p>This is a simple example showing how to use MathJax on a static HTML page hosted with GitHub Pages.</p>
+
+  <h2>Inline Math</h2>
+  <p>Euler's identity: \(e^{i\pi} + 1 = 0\)</p>
+
+  <h2>Display Math</h2>
+  <p>
+    Here is a displayed equation:
+  </p>
+\[
+    \int_0^\infty e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
+\]
+
+  <h2>LaTeX in Code Blocks</h2>
+  <pre><code>\int_a^b f(x)\,dx = F(b) - F(a)</code></pre>
+  
+  <h2>Use double $</h2>
+  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+  
+  <footer>
+    <p>Hosted with GitHub Pages</p>
+  </footer>
 </body>
 </html>

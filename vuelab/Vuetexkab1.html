@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hikari's Vue + MathJax + Code Highlight</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
+  <!-- Vue 3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2rem;
+      background-color: #f1faff;
+      color: #333;
+    }
+    h1 {
+      color: #0077b6;
+    }
+    pre {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+    .formula {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #ffffffdd;
+      border-left: 4px solid #0077b6;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vue.js + MathJax + 程式碼高亮展示</h1>
+
+  <h2>Vue 程式碼範例：</h2>
+  <pre><code class="language-html">
+&lt;div id="app"&gt;
+  &lt;p&gt;{{ message }}&lt;/p&gt;
+  &lt;button @click="reverse"&gt;Reverse&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+const { createApp } = Vue;
+createApp({
+  data() {
+    return { message: 'Hello Vue!' };
+  },
+  methods: {
+    reverse() {
+      this.message = this.message.split('').reverse().join('');
+    }
+  }
+}).mount('#app');
+&lt;/script&gt;
+  </code></pre>
+
+  <h2>Vue 實際運作區塊：</h2>
+  <div id="app">
+    <p>{{ message }}</p>
+    <button @click="reverse">Reverse</button>
+  </div>
+
+  <h2>數學公式展示：</h2>
+  <div class="formula">
+    行內公式：$e^{i\pi} + 1 = 0$
+  </div>
+  <div class="formula">
+    向量積分公式：
+\[
+      \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}
+\]
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+    createApp({
+      data() {
+        return { message: 'Hello Vue!' };
+      },
+      methods: {
+        reverse() {
+          this.message = this.message.split('').reverse().join('');
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>

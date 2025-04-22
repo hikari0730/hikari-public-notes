@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MathJax + Chemistry on GitHub Pages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- MathJax with mhchem extension -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        packages: {'[+]': ['mhchem']}
+      },
+      loader: {
+        load: ['[tex]/mhchem']
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>MathJax + Chemistry Example</h1>
+
+  <h2>Inline Math</h2>
+  <p>Euler's identity using <code>\(...\)</code>: \(e^{i\pi} + 1 = 0\)</p>
+  <p>Euler's identity using <code>$...$</code>: $e^{i\pi} + 1 = 0$</p>
+
+  <h2>Display Math</h2>
+  <p>Gaussian integral:</p>
+\[
+    \int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
+\]
+
+$$
+    \int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
+$$
+
+  <h2>Chemical Reactions</h2>
+  <p>Combustion of hydrogen:</p>
+\[
+    \ce{2H2 + O2 -> 2H2O}
+\]
+
+  <p>Ammonia synthesis:</p>
+  <p>$\ce{N2 + 3H2 <=> 2NH3}$</p>
+
+  <footer>
+    <p>Math and Chemistry rendered by MathJax + mhchem | Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html>

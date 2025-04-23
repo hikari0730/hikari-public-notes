@@ -17,7 +17,7 @@ Our goal is to find a general solution for $y(x)$.
 Define the **integrating factor** $\mu(x)$ as:
 
 $$
-\mu(x) = e^{\int P(x) \, dx}
+\mu(x) = e^{\int P(x)  dx}
 $$
 
 Multiplying both sides of the original equation by $\mu(x)$:
@@ -57,7 +57,7 @@ $$
 is given by:
 
 $$
-y(x) = \frac{1}{e^{\int P(x) dx}} \left( \int e^{\int P(x) dx} Q(x) \, dx + C \right)
+y(x) = \frac{1}{e^{\int P(x) dx}} \left( \int e^{\int P(x) dx} Q(x) dx + C \right)
 $$
 
 This completes the derivation of the integrating factor method.

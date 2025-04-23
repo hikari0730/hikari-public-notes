@@ -37,13 +37,13 @@ $$
 Now integrate both sides with respect to $x$:
 
 $$
-\mu(x) y = \int \mu(x) Q(x) \, dx + C
+\mu(x) y = \int \mu(x) Q(x) dx + C
 $$
 
 Solving for $y$:
 
 $$
-y(x) = \frac{1}{\mu(x)} \left( \int \mu(x) Q(x) \, dx + C \right)
+y(x) = \frac{1}{\mu(x)} \left( \int \mu(x) Q(x) dx + C \right)
 $$
 
 ## 4. Summary
@@ -57,7 +57,7 @@ $$
 is given by:
 
 $$
-y(x) = \frac{1}{e^{\int P(x) \, dx}} \left( \int e^{\int P(x) \, dx} Q(x) \, dx + C \right)
+y(x) = \frac{1}{e^{\int P(x) dx}} \left( \int e^{\int P(x) dx} Q(x) \, dx + C \right)
 $$
 
 This completes the derivation of the integrating factor method.

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrating Factor Method</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: #f9fafb;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #1a3d5d;
+    }
+    code {
+      background: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 1em;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .box {
+      background: #eef7ff;
+      border-left: 4px solid #3a6ea5;
+      padding: 1rem;
+      margin: 1.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Derivation of the Integrating Factor Method</h1>
+
+  <p>This note presents the derivation of the <strong>Integrating Factor Method</strong> used to solve first-order linear ordinary differential equations (ODEs).</p>
+
+  <h2>1. General Form</h2>
+  <p>The standard form of a first-order linear ODE is:</p>
+  <p>$$\frac{dy}{dx} + P(x)y = Q(x)$$</p>
+  <p>Our objective is to find the general solution for \(y(x)\).</p>
+
+  <h2>2. Introducing the Integrating Factor</h2>
+  <p>We define the <strong>integrating factor</strong> \(\mu(x)\) as:</p>
+  <p>$$\mu(x) = e^{\int P(x) \, dx}$$</p>
+  <p>Multiplying both sides of the differential equation by \(\mu(x)\):</p>
+  <p>$$\mu(x)\frac{dy}{dx} + \mu(x)P(x)y = \mu(x)Q(x)$$</p>
+  <p>The left-hand side simplifies to:</p>
+  <p>$$\frac{d}{dx}[\mu(x)y] = \mu(x)Q(x)$$</p>
+
+  <h2>3. Solving by Integration</h2>
+  <p>Integrate both sides with respect to \(x\):</p>
+  <p>$$\mu(x)y = \int \mu(x)Q(x)\,dx + C$$</p>
+  <p>Solve for \(y(x)\):</p>
+  <p>$$y(x) = \frac{1}{\mu(x)}\left(\int \mu(x)Q(x)\,dx + C\right)$$</p>
+
+  <h2>4. Summary</h2>
+  <p>The general solution to:</p>
+  <p>$$\frac{dy}{dx} + P(x)y = Q(x)$$</p>
+  <p>is:</p>
+  <p>$$y(x) = \frac{1}{e^{\int P(x)\,dx}}\left(\int e^{\int P(x)\,dx} Q(x)\,dx + C\right)$$</p>
+
+  <h2>5. Example</h2>
+  <p>Solve the differential equation:</p>
+  <p>$$\frac{dy}{dx} + 2y = e^{-2x}$$</p>
+
+  <div class="box">
+    <strong>Step 1:</strong> Identify \(P(x) = 2\), \(Q(x) = e^{-2x}\) <br>
+    <strong>Step 2:</strong> Compute the integrating factor: <br>
+    $$\mu(x) = e^{\int 2 dx} = e^{2x}$$ <br>
+    <strong>Step 3:</strong> Multiply both sides: <br>
+    $$e^{2x} \frac{dy}{dx} + 2e^{2x}y = 1$$ <br>
+    Left-hand side becomes: <br>
+    $$\frac{d}{dx}[e^{2x}y] = 1$$ <br>
+    <strong>Step 4:</strong> Integrate both sides: <br>
+    $$e^{2x}y = \int 1\,dx = x + C$$ <br>
+    <strong>Step 5:</strong> Solve for \(y\): <br>
+    $$y = e^{-2x}(x + C)$$
+  </div>
+
+  <p><strong>Final Answer:</strong></p>
+  <p>$$y(x) = e^{-2x}(x + C)$$</p>
+
+  <hr />
+  <p><strong>Keywords:</strong> integrating factor, linear ODE, first-order differential equation, exact derivative, example problem.</p>
+
+</body>
+</html>

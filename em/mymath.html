@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Forest Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background: #f0f8f4;
+      color: #2e4f2e;
+    }
+    header {
+      background: #2e4f2e;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #3e6b3e;
+      padding: 0.5rem;
+      text-align: center;
+      color: #cce0cc;
+    }
+    .content {
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      background: #e8f5ec;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 5px solid #4c7c4c;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #2f5f2f;
+    }
+    img.hero {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Math Forest Notes</h1>
+    <p>Elegant mathematical exploration, made for mobile</p>
+  </header>
+
+  <nav>
+    <!-- Placeholder for future navigation items -->
+    Home | Notes | Tools | Contact
+  <!--
+  https://mywebsite/em/index.html
+  *絕對路徑
+  <a href="/em/index.html">Home</a> |
+  <a href="/em/notes.html">Notes</a> |
+  <a href="/em/tools.html">Tools</a> |
+  <a href="/em/contact.html">Contact</a>
+  *相對路徑
+  <a href="index.html">Home</a> |
+  <a href="notes.html">Notes</a> |
+  <a href="tools.html">Tools</a> |
+  <a href="contact.html">Contact</a>
+ -->
+  </nav>
+
+  <div class="content">
+    <!--
+    <img class="hero" src="forest-math-theme.jpg" alt="Forest themed math image" />
+    -->
+    <div class="section">
+      <h2>Mathematical Foundations</h2>
+      <p>
+        Explore beautifully explained proofs of core topics like:
+        differential equations, inverse operator method, vector calculus,
+        line integrals, gradients, divergence, and curl.
+      </p>
+      <p>
+        Example inline math: \(\nabla \cdot \vec{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}\)
+      </p>
+      <p>
+        Example block math:
+\[
+          \frac{dy}{dx} + P(x)y = Q(x) \Rightarrow y = \frac{1}{\mu(x)} \left( \int \mu(x)Q(x)\,dx + C \right)
+\]
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Using Gnuplot for Graphs</h2>
+      <p>
+        Learn how to generate professional-quality plots and visualizations using Gnuplot,
+        including 2D/3D function plots, parametric curves, and integration with LaTeX.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Online Math Tools</h2>
+      <p>
+        Curated list of helpful tools: LaTeX equation generators, formula image converters,
+        function plotters, and symbolic calculators — all tested and recommended.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

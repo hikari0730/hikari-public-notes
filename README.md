@@ -1,26 +1,60 @@
-# HIKARI's Vue Notes
+# hikari-public-notes
 
-This repo contains personal Vue.js learning notes.
+Welcome to **hikari-public-notes**, a personal collection of structured study notes, designed for easy sharing and reference. This repository is organized by topic, with multilingual support and a clean, minimal layout. Topics span from technical programming to language learning and advanced mathematics.
 
-# Vue Learning Notes by HIKARI
+## Table of Contents
 
-Welcome to HIKARI's personal Vue learning notes, written in English and designed for self-paced learning. All notes are versioned and openly available for others to read or fork.
+1. [Vue.js Notes](#vuejs-notes)
+2. [Korean Practice](#korean-practice)
+3. [Classical Japanese 文語](#classical-japanese-文語)
+4. [Engineering Mathematics](#engineering-mathematics)
+5. [LaTeX Techniques](#latex-techniques)
 
-## Topics Covered
+---
 
-- Introduction to Vue
-- Reactivity system
-- Component system
-- Composition API vs Options API
-- Routing and state management (upcoming)
+## Vue.js Notes
 
-## Directory
+- Clear explanations of Vue 3 concepts.
+- English-Chinese (中英對照) learning style.
+- Engineer-style formatting for syntax clarity.
+- Includes setup notes for Vue + PHP + MySQL projects.
 
-- `vue-learning/`: Main learning content
-- `quizzes/`: Practice questions and review
-- `examples/`: Real code snippets explained
-- `assets/`: Images used in markdown
+## Korean Practice
+
+- Everyday grammar and vocabulary.
+- Practice sentences and expressions.
+- Trilingual layout: Korean, Japanese, and Chinese.
+- Ideal for intermediate learners aiming to reinforce fluency.
+
+## Classical Japanese 文語
+
+- Notes on classical 文語 grammar and usage.
+- Formal patterns and typical kanbun structures.
+- Useful for reading historical texts or academic literature.
+- Bilingual: Modern Japanese + Classical interpretations.
+
+## Engineering Mathematics
+
+- Step-by-step notes on differential equations and operators.
+- English-Japanese parallel layout.
+- Focus on application-oriented math used in engineering contexts.
+- Enhanced with solved examples and LaTeX-based formatting.
+
+## LaTeX Techniques
+
+- Tips and templates for writing technical documents.
+- Covers automatic table of contents, custom headers/footers, math environments, and more.
+- Suitable for academic papers, lecture notes, and multilingual documents.
+
+---
 
 ## License
 
-MIT - feel free to use or remix.
+This repository is shared under the [MIT License](LICENSE).  
+Feel free to fork, modify, and learn!
+
+---
+
+## About the Author
+
+HIKARI – a multilingual learner passionate about sharing knowledge through beautifully formatted notes and open collaboration.

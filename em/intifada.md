@@ -17,7 +17,7 @@ Our goal is to find a general solution for $y(x)$.
 Define the **integrating factor** $\mu(x)$ as:
 
 $$
-\mu(x) = e^{\int P(x)  dx}
+\mu(x) = e^{\int P(x) dx}
 $$
 
 Multiplying both sides of the original equation by $\mu(x)$:

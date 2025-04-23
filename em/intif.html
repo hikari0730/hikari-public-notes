@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrating Factor Method - Derivation</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: auto;
+      padding: 1rem;
+      background: #fdfdfd;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2e4f2e;
+    }
+    hr {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Derivation of the Integrating Factor Method</h1>
+
+  <p>This note presents the derivation of the <strong>Integrating Factor Method</strong> used to solve first-order linear ordinary differential equations (ODEs).</p>
+
+  <h2>1. General Form</h2>
+  <p>We start with a first-order linear ODE:</p>
+  <p>$$\frac{dy}{dx} + P(x)y = Q(x)$$</p>
+  <p>Our goal is to find a general solution for \(y(x)\).</p>
+
+  <h2>2. Multiplying by the Integrating Factor</h2>
+  <p>Define the <strong>integrating factor</strong> \(\mu(x)\) as:</p>
+  <p>$$\mu(x) = e^{\int P(x) \, dx}$$</p>
+  <p>Multiplying both sides of the original equation by \(\mu(x)\):</p>
+  <p>$$\mu(x) \frac{dy}{dx} + \mu(x) P(x) y = \mu(x) Q(x)$$</p>
+  <p>The left-hand side becomes the derivative of \(\mu(x)y\):</p>
+  <p>$$\frac{d}{dx}[\mu(x) y] = \mu(x) Q(x)$$</p>
+
+  <h2>3. Integration</h2>
+  <p>Now integrate both sides with respect to \(x\):</p>
+  <p>$$\mu(x) y = \int \mu(x) Q(x) \, dx + C$$</p>
+  <p>Solving for \(y\):</p>
+  <p>$$y(x) = \frac{1}{\mu(x)} \left( \int \mu(x) Q(x) \, dx + C \right)$$</p>
+
+  <h2>4. Summary</h2>
+  <p>The solution to the equation:</p>
+  <p>$$\frac{dy}{dx} + P(x)y = Q(x)$$</p>
+  <p>is given by:</p>
+  <p>$$y(x) = \frac{1}{e^{\int P(x) \, dx}} \left( \int e^{\int P(x) \, dx} Q(x) \, dx + C \right)$$</p>
+  <p>This completes the derivation of the integrating factor method.</p>
+
+  <hr />
+
+  <p><strong>Keywords</strong>: integrating factor, linear differential equation, first-order ODE, exact derivative, general solution.</p>
+</body>
+</html>

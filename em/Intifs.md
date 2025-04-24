@@ -1,5 +1,4 @@
-給定一個一階線性微分方程式 $\frac{dy}{dx}+P(x)y=Q(x)$，若存在 $\mu(x)$ 同乘等式兩側後，等式左側滿足
-$\frac{d}{dx}（\mu(x)y） = \mu(x)\frac{dy}{dx} + \mu(x)P(x)y$
+給定一階線性微分方程式 $\frac{dy}{dx}+P(x)y=Q(x)$，若存在 $\mu(x)$ 同乘等式兩側後，等式左側滿足 $\frac{d}{dx}(\mu(x)y)=\mu(x)\frac{dy}{dx}+\mu(x)P(x)y$
 
 即 $\frac{d\mu(x)}{dx} = \mu(x)P(x)$時 ,則稱 $\mu(x)$為該微分方程式的積分因子。
 
@@ -29,14 +28,12 @@ $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$, 因為 $\frac{dln(x)}{dx}=\frac{1}{x
 $\frac{dln(\mu(x))}{dx}
 =（\frac{dln(\mu(x))}{d\mu(x)}）\times(\frac{d\mu(x)}{dx})
 = \frac{\frac{d\mu(x)}{dx}}{\mu(x)}
-= P(x)$算式推導得出與$ln(\mu(x))$的關係, 等式兩邊再同時積分， $\int\frac{dln(\mu(x))}{dx}
+= P(x)$算式推導得出與 $ln(\mu(x))$的關係, 等式兩邊再同時積分， $\int\frac{dln(\mu(x))}{dx}dx
 = \int P(x)dx$， 
 $ln(\mu(x)) = \int P(x)dx$ ，
 兩邊取指數,  
 $\mu(x) = e^{\int P(x)dx}$，
 即可求得積分因子 $\mu(x)$。
-
-以下是根據你需求整理的 GitHub Markdown (.md) 檔案格式，包含 數學公式美化排版、中英對照說明，並使用 GitHub 支援的寫法（單行公式用 $...$，多行用程式碼區塊模擬）：
 
 ---
 
@@ -44,14 +41,10 @@ $\mu(x) = e^{\int P(x)dx}$，
 **How to find the integrating factor $\mu(x)$?**
 
 給定一階線性微分方程的積分因子微分式：
-
- $\frac{d\mu(x)}{dx} = \mu(x)P(x)$  
- Given: $\frac{d\mu(x)}{dx} = \mu(x)P(x)$
+Given: $\frac{d\mu(x)}{dx} = \mu(x)P(x)$
 
 將等式改寫為變數分離形式：
-
- $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$  
- Rewrite: $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$
+Rewrite: $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$
 
 由 $\frac{d}{dx}[\ln(\mu(x))] = \frac{1}{\mu(x)}\cdot \frac{d\mu(x)}{dx}$（連鎖律）可得：
 
@@ -81,8 +74,6 @@ $\mu(x) = e^{\int P(x),dx}$
  The integrating factor is: $\mu(x) = e^{\int P(x),dx}$
 
 ---
-
-這份 `.md` 檔可以直接貼到 GitHub README 或其他 Markdown 支援平台上。若你想要版本含圖片公式或 PDF 格式，我也可以幫你產出。是否也需要一份 PDF 呢？
 
 
 

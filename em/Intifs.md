@@ -1,5 +1,5 @@
 給定一個一階線性微分方程式 $\frac{dy}{dx}+P(x)y=Q(x)$，若存在 $\mu(x)$ 同乘等式兩側後，等式左側滿足
-$\frac{d}{dx}[\mu(x)y] = \mu(x)\frac{dy}{dx} + \mu(x)P(x)y$
+$\frac{d}{dx}（\mu(x)y） = \mu(x)\frac{dy}{dx} + \mu(x)P(x)y$
 
 即 $\frac{d\mu(x)}{dx} = \mu(x)P(x)$時 ,則稱 $\mu(x)$為該微分方程式的積分因子。
 

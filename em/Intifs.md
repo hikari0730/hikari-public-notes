@@ -25,11 +25,11 @@ $\frac{d}{dx}[\mu(x)y] = \mu(x)\frac{dy}{dx} + \mu(x)P(x)y$
 ## 如何求得 $\mu(x)$?
 給定 $\frac{d\mu(x)}{dx} = \mu(x)P(x)$,
 移項後 
-$\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$, 因為 $\frac{dln(x)}{dx}=\frac{1}{x}$以及連鎖律，原等式 $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$可由 
+$\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$, 因為 $\frac{dln(x)}{dx}=\frac{1}{x}$以及根據連鎖律，原等式 $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$可由 
 $\frac{dln(\mu(x))}{dx}
 =（\frac{dln(\mu(x))}{d\mu(x)}）\times(\frac{d\mu(x)}{dx})
 = \frac{\frac{d\mu(x)}{dx}}{\mu(x)}
-= P(x)$推導可得, 等式兩邊再同時積分， $\int\frac{dln(\mu(x))}{dx}
+= P(x)$算式推導得出, 等式兩邊再同時積分， $\int\frac{dln(\mu(x))}{dx}
 = \int P(x)dx$， 
 $ln(\mu(x)) = \int P(x)dx$ ，
 兩邊取指數,  

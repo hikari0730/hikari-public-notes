@@ -29,7 +29,7 @@ $\frac{\frac{d\mu(x)}{dx}}{\mu(x)} = P(x)$, 因為 $\frac{dln(x)}{dx}=\frac{1}{x
 $\frac{dln(\mu(x))}{dx}
 =（\frac{dln(\mu(x))}{d\mu(x)}）\times(\frac{d\mu(x)}{dx})
 = \frac{\frac{d\mu(x)}{dx}}{\mu(x)}
-= P(x)$算式推導得出, 等式兩邊再同時積分， $\int\frac{dln(\mu(x))}{dx}
+= P(x)$算式推導得出與$ln(\mu(x))$的關係, 等式兩邊再同時積分， $\int\frac{dln(\mu(x))}{dx}
 = \int P(x)dx$， 
 $ln(\mu(x)) = \int P(x)dx$ ，
 兩邊取指數,  

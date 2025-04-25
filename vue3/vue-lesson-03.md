@@ -3,6 +3,7 @@
 lesson-03-events.md
 
 ---
+
 title: "Lesson 3: Handling Events in Vue 3"
 lang: en-zh
 level: beginner
@@ -10,6 +11,7 @@ tags: [vue3, events, click, methods]
 lesson: 3
 status: in-progress
 emoji: "⚡"
+
 ---
 
 # Lesson 3: Handling Events in Vue 3  

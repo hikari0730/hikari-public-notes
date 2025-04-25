@@ -96,37 +96,34 @@ function handleClick(e) {
 
 ### Q1. 下列哪一個寫法可以正確綁定點擊事件？
 
-A. @click="sayHello" 
-B. v-on:click="sayHello" 
-C. onClick="sayHello()" 
-D. click="sayHello" 
+- A. @click="sayHello" 
+- B. v-on:click="sayHello" 
+- C. onClick="sayHello()" 
+- D. click="sayHello" 
 
 Answer: ✅ A, ✅ B
-
 
 ---
 
 ### Q2. 若要在事件中傳遞一個參數 "Vue"，下列哪個寫法是正確的？
 
-A. @click="sayHi('Vue')" 
-B. @click="sayHi = 'Vue'" 
-C. @click="sayHi: 'Vue'"
-D. @click="sayHi{'Vue'}"
+- A. @click="sayHi('Vue')" 
+- B. @click="sayHi = 'Vue'" 
+- C. @click="sayHi: 'Vue'"
+- D. @click="sayHi{'Vue'}"
 
 Answer: ✅ A
-
 
 ---
 
 Q3. $event 在 Vue 中的用途是什麼？
 
-A. 傳遞布林值給子元件
-B. 存取原生 DOM 事件物件
-C. 宣告一個反應式變數
-D. 選擇 CSS 元素
+- A. 傳遞布林值給子元件
+- B. 存取原生 DOM 事件物件
+- C. 宣告一個反應式變數
+- D. 選擇 CSS 元素
 
 Answer: ✅ B
-
 
 ---
 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Forest Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background: #f7fcfb;
+      color: #3b3a30;
+    }
+    header {
+      background: #00bfae;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.2rem 0 0;
+      font-style: italic;
+      font-size: 1rem;
+    }
+    nav {
+      background: #ffd859;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      color: #5a4e2c;
+    }
+    .content {
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      background: #fff6f4;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 6px solid #ff8a80;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #ff6f61;
+    }
+    .tip-box {
+      background: #d0f0ed;
+      color: #006a63;
+      padding: 0.8rem 1rem;
+      margin: 1rem auto;
+      border-radius: 10px;
+      font-size: 1rem;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+    }
+    .tip-box .icon {
+      margin-right: 0.6rem;
+      font-size: 1.3rem;
+    }
+    img.hero {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Math Forest Notes</h1>
+    <p>Fun & fresh math learning for curious minds</p>
+  </header>
+
+  <nav>
+    Home | Notes | Tools | Contact
+  <!--
+  https://mywebsite/em/index.html
+  *絕對路徑
+  <a href="/em/index.html">Home</a> |
+  <a href="/em/notes.html">Notes</a> |
+  <a href="/em/tools.html">Tools</a> |
+  <a href="/em/contact.html">Contact</a>
+  *相對路徑
+  <a href="index.html">Home</a> |
+  <a href="notes.html">Notes</a> |
+  <a href="tools.html">Tools</a> |
+  <a href="contact.html">Contact</a>
+ -->
+  </nav>
+
+  <div class="content">
+    <div class="tip-box">
+      <span class="icon">✏️</span>
+      <span id="math-tip">Loading tip...</span>
+    </div>
+
+    <div class="section">
+      <h2>📘 Mathematical Foundations</h2>
+      <p>
+        Dive into clear explanations of differential equations, the inverse operator method,
+        and vector calculus including gradients, divergence, and curl.
+      </p>
+      <p>
+        Example inline math: \(\nabla \cdot \vec{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}\)
+      </p>
+      <p>
+        Example block math:
+\[
+\begin{aligned}
+  \frac{dy}{dx} + P(x)y &= Q(x) \\
+  \Rightarrow\quad y &= \frac{1}{\mu(x)} \left( \int \mu(x) Q(x)\, dx + C \right)
+\end{aligned}
+\]
+
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📈 Using Gnuplot for Graphs</h2>
+      <p>
+        Learn to make stunning 2D and 3D plots, parametric curves, and embed them beautifully in LaTeX.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🛠Online Math Tools</h2>
+      <p>
+        Discover tools like LaTeX generators, formula converters, symbolic solvers, and more—tested and trusted!
+      </p>
+    </div>
+  </div>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <script>
+    const tips = [
+      "The derivative of \\( e^x \\) is... still \\( e^x \\)! ✨",
+      "Break problems into smaller steps.",
+      "Draw diagrams to visualize concepts.",
+      "Infinity isn’t a number — it’s a concept. 🚀",
+      "The square root of -1 is called \\( i \\). It’s imaginary — but powerful. 🌟",
+      "Check units in your equations.",
+      "Practice makes confidence!",
+      "Double-check signs and parentheses.",
+      "Don’t memorize—understand!",
+      "Rewriting helps you spot patterns."
+    ];
+    const tipDisplay = document.getElementById('math-tip');
+    const randomIndex = Math.floor(Math.random() * tips.length);
+    tipDisplay.textContent = tips[randomIndex];
+  </script>
+</body>
+</html>
